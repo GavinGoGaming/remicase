@@ -12,7 +12,7 @@ module.exports = {
     bindingAddress: '127.0.0.1',
     port: 8080,
     crossDomainPort: 8081,
-    publicDir: path.join(__dirname, '../public'), // set to null to disable
+    publicDir: null, // set to null to disable
 
     // enable or disable multithreading
     enableWorkers,
@@ -32,7 +32,7 @@ module.exports = {
     // },
 
     // enforce a password for creating new sessions. set to null to disable
-    password: 'sharkie4life',
+    password: null,
 
     // disable or enable localStorage sync (turn off if clients send over huge localStorage data, resulting in huge memory usages)
     disableLocalStorageSync: false,
